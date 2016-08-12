@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>游戏</title>
+	<link rel="stylesheet" href="css/game.css">
+	<script src="js/game.js"></script>
+	<script>
+	window.onload=function(){
+		var sence=document.getElementsByClassName("sence")[0];
+		var start=document.getElementsByClassName("start")[0];
+		start.onclick=function(){
+			this.innerHTML="暂停游戏";
+			new game(sence,start);
+		}
+		// console.log(sence)
+	}
+	</script>
+</head>
+<body>
+	<div class="sence">
+		<div class="start">开始游戏</div>
+	</div>
+</body>
+</html>
